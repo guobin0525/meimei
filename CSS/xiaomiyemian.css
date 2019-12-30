@@ -1,0 +1,734 @@
+/*header-start*/
+.header{
+    height: 40px;
+    background-color: #333;
+}
+.header .w .nav{
+    float: left;
+}
+.header .w .nav ul li{
+    float:left;
+    height: 40px;
+   line-height: 42px;
+}
+.header .w .nav ul li a {
+    color: #b0b0b0;
+    padding: 0 7px;
+}
+.header .w .nav ul li:first-child a{
+    padding-left: 0;
+}
+.header .w .nav ul li+li a{
+    border-left: 1px solid #424242;
+}
+.header .w .nav ul li a:hover{
+    color: #fff;
+}
+.header .w .shopping{
+    width: 120px;
+    float: right;
+    height: 40px;
+    line-height: 40px;
+    background-color: #424242;
+    text-align: center;
+    position: relative;
+}
+.header .w .shopping a{
+    display: block;
+    color: #b0b0b0;
+}
+.header .w .shopping a ins{
+    display: inline-block;
+    width: 20px;
+    height: 14px;
+    background: url("../images/header01.png") no-repeat center;
+    vertical-align: middle;
+}
+.header .w .shopping:hover{
+    background-color: #fff;
+}
+.header .w .shopping:hover a{
+    color: #ff6700;
+}
+.header .w .shopping:hover a ins{
+    background-image: url("../images/header0101.png");
+}
+.header .w .shopping .loader{
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 316px;
+    height: 0;
+    line-height: 98px;
+    font-size: 12px;
+    color: #424242;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);/*阴影的使用*/
+    overflow: hidden;/*在div高度为0时，添加此项使内容隐藏*/
+    transition: height 0.5s ease;/*添加在需要动画的元素上，即div上*/
+}
+.header .w .shopping:hover .loader{
+    height: 98px;
+}
+.header .w .login{
+    float: right;
+}
+.header .w .login ul li{
+    height: 40px;
+    line-height: 40px;
+    float: left;
+}
+.header .w .login ul li a{
+    color: #b0b0b0;
+    padding: 0 6px;
+    border-right: 1px solid #424242;
+}
+.header .w .login ul li:last-child a{
+    border: none;
+    padding-right: 26px;
+    padding-left: 10px;
+}
+/*header-end*/
+/*section-start*/
+/*section-nav-start*/
+.section-nav{
+    height: 100px;
+}
+.section-nav .w h1{
+    float: left;
+    margin: 22px 0;
+}
+.section-nav .w h1 a{
+    display: block;
+    background:url("../images/milogo01.png") no-repeat;
+    width: 55px;
+    height: 55px;
+}
+/*.section-nav .w h1:before{
+    background: url("../images/mi01.png") no-repeat 50% 50%;
+    opacity: 1;
+}*/
+.section-nav .w ul{
+    margin-left: 190px;
+    float: left;
+}
+.section-nav .w ul li{
+    float: left;
+    height: 100px;
+    line-height: 100px;
+    font-size: 16px;
+    margin-right: 20px;
+}
+.section-nav .w ul li a{
+    color: #333333;
+}
+.section-nav .w .nav-right{
+    float: right;
+    width: 294px;
+    height: 48px;
+    margin: 26px 0;
+    border: 1px solid #e0e0e0;
+}
+.section-nav .w .nav-right input{
+    display: inline-block;
+    font-size: 14px;
+    width: 223px;
+    line-height: 48px;
+    vertical-align: top;
+    border-right: 1px solid #e0e0e0;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.section-nav .w .nav-right input::-webkit-input-placeholder{
+    font-size: 12px;
+    text-align: right;
+    padding: 0 4px;
+    background-color: #eeeeee;
+}
+.section-nav .w .nav-right input:hover::-webkit-input-placeholder{
+    color: #ffffff;
+    background-color: #ff6700;
+
+}
+.section-nav .w .nav-right a{
+    display: inline-block;
+    width: 50px;
+    height: 48px;
+    background: #fff url("../images/search.png") no-repeat center;
+}
+.section-nav .w .nav-right a:hover{
+    background: #ff6700 url("../images/search02.png") no-repeat center;
+}
+/*section-nav-end*/
+/*section-product-start*/
+.section-product{
+    margin-bottom:44px;
+}
+.section-product .w{
+    height: 644px;
+}
+.section-product .w .sp-t{
+    margin-bottom: 14px;
+    height: 460px;
+    background: url("../images/section-p01.jpg") no-repeat center top;
+    background-size: cover;
+    position: relative;
+}
+.section-product .w .sp-t .sp-t-l {
+    width: 234px;
+    height: 460px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.section-product .w .sp-t .sp-t-l ul{
+    padding: 20px 0;
+}
+.section-product .w .sp-t .sp-t-l ul li{
+    height: 42px;
+    line-height: 42px;
+    font-size: 14px;
+
+}
+.section-product .w .sp-t .sp-t-l ul li a{
+    display: block;
+    color: #fff;
+    padding: 0 24px 0 30px;
+}
+.section-product .w .sp-t .sp-t-l ul li a:hover{
+    background-color: #ff6700;
+}
+.section-product .w .sp-t .sp-t-l ul li a span{
+    float: right;
+}
+.section-product .w .sp-t .sp-t-l ul li a span img{
+    vertical-align: baseline;
+}
+/*提炼两个箭头的公共样式*/
+.section-product .w .sp-t .left,.section-product .w .sp-t .right{
+    position: absolute;
+    width: 40px;
+    height: 66px;
+    line-height: 66px;
+    top: 50%;
+    margin-top: -33px;
+    font-size: 30px;
+    text-align: center;
+}
+.section-product .w .sp-t .left a,.section-product .w .sp-t .right a{
+    color: #d4d0cd;
+    display: block;
+}
+.section-product .w .sp-t .left a:hover,.section-product .w .sp-t .right a:hover{
+    background-color: rgba(0,0,0,0.4);
+    color: #fff;
+}
+.section-product .w .sp-t .left{
+    left: 234px;
+}
+.section-product .w .sp-t .right{
+    right: 0;
+}
+
+
+
+.section-product .w .sp-t ol{
+    position: absolute;
+    right: 35px;
+    bottom: 25px;
+}
+.section-product .w .sp-t ol li{
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #98928d;
+    border: 2px solid #b6aea8;
+    border-radius: 50%;
+    float: left;
+}
+.section-product .w .sp-t ol li+li{
+    margin-left: 10px;
+}
+.section-product .w .sp-t ol li:hover{
+    border-color: #98928d;
+    background-color: #fef3ea;
+}
+.section-product .w .sp-t ol li.current{
+    border-color: #98928d;
+    background-color: #fef3ea;
+}
+.section-product .w .sp-b{
+    height: 170px;
+}
+.section-product .w .sp-b .sp-b-l{
+    width: 234px;
+    height: 170px;
+    background-color: #5f5750;
+    float: left;
+    margin-right: 14px;
+}
+.section-product .w .sp-b .sp-b-l ol{
+    width: 228px;
+    height: 164px;
+    padding: 3px 3px;
+}
+.section-product .w .sp-b .sp-b-l ol li{
+    width: 70px;
+    height: 82px;
+    float: left;
+    padding: 0 3px;
+    text-align: center;
+    position: relative;
+}
+.section-product .w .sp-b .sp-b-l ol li a{
+    display: block;
+    color: #cdcac8;
+    padding: 18px 0 0;
+}
+.section-product .w .sp-b .sp-b-l ol li a p{
+    margin: 0 auto;
+    width: 25px;
+    height: 28px;
+}
+.section-product .w .sp-b .sp-b-l ol li a.tu1 p{
+    background: url("../images/sp-b-l-01.png") no-repeat center top;
+}
+.section-product .w .sp-b .sp-b-l ol li a.tu1:hover p{
+    background: url("../images/sp-b-l-0101.png") no-repeat center top;
+}
+.section-product .w .sp-b .sp-b-l ol li a.tu1:hover{
+    color: #fff;
+}
+.section-product .w .sp-b .sp-b-l ol li a.tu2 p{
+    background: url("../images/sp-b-l-02.png") no-repeat center top;
+}
+.section-product .w .sp-b .sp-b-l ol li a.tu2:hover p{
+    background: url("../images/sp-b-l-0201.png") no-repeat center top;
+}
+.section-product .w .sp-b .sp-b-l ol li a.tu2:hover{
+    color: #fff;
+}
+.section-product .w .sp-b .sp-b-l ol li a.tu3 p{
+    background: url("../images/sp-b-l-03.png") no-repeat center top;
+}
+.section-product .w .sp-b .sp-b-l ol li a.tu3:hover p{
+    background: url("../images/sp-b-l-0301.png") no-repeat center top;
+}
+.section-product .w .sp-b .sp-b-l ol li a.tu3:hover{
+    color: #fff;
+}
+.section-product .w .sp-b .sp-b-l ol li a.tu4 p{
+    background: url("../images/sp-b-l-04.png") no-repeat center top;
+}
+.section-product .w .sp-b .sp-b-l ol li a.tu4:hover p{
+    background: url("../images/sp-b-l-0401.png") no-repeat center top;
+}
+.section-product .w .sp-b .sp-b-l ol li a.tu4:hover{
+    color: #fff;
+}
+.section-product .w .sp-b .sp-b-l ol li a.tu5 p{
+    background: url("../images/sp-b-l-05.png") no-repeat center top;
+}
+.section-product .w .sp-b .sp-b-l ol li a.tu5:hover p{
+    background: url("../images/sp-b-l-0501.png") no-repeat center top;
+}
+.section-product .w .sp-b .sp-b-l ol li a.tu5:hover{
+    color: #fff;
+}
+.section-product .w .sp-b .sp-b-l ol li a.tu6 p{
+    background: url("../images/sp-b-l-06.png") no-repeat center top;
+}
+.section-product .w .sp-b .sp-b-l ol li a.tu6:hover p{
+    background: url("../images/sp-b-l-0601.png") no-repeat center top;
+}
+.section-product .w .sp-b .sp-b-l ol li a.tu6:hover{
+    color: #fff;
+}
+/*添加边框，使用before与after伪类元素*/
+/*before与after的公共样式*/
+.section-product .w .sp-b .sp-b-l ol li:before,.section-product .w .sp-b .sp-b-l ol li:after{
+    position: absolute;
+    content:"";
+    background-color: #665e57;
+}
+/*before与after的单独样式*/
+.section-product .w .sp-b .sp-b-l ol li.left:before{
+    width: 1px;
+    height: 70px;
+    top: 6px;
+    left: 0;
+}
+.section-product .w .sp-b .sp-b-l ol li.top:after{
+    width: 64px;
+    height: 1px;
+    top: -1px;
+    left: 6px;
+}
+.section-product .w .sp-b ul li{
+    float: left;
+}
+.section-product .w .sp-b ul li+li{
+    margin-left: 15px;
+}
+.section-product .w .sp-b ul li a img{
+    width: 316px;
+}
+/*section-product-end*/
+
+/*section-hot-start*/
+.section-hot .w .section-hot-t{
+
+}
+/*下面一行已提取公共样式为.h4 */
+/*提出公共样式 .section-hot-t-jian*/
+.section-hot .w .section-hot-c{
+    height: 340px;
+}
+.section-hot .w .section-hot-c ul li{
+    float: left;
+    width: 234px;
+    height: 339px;
+    background-color: #fafafa;
+}
+.section-hot .w .section-hot-c ul li+li{
+    margin-left: 14px;
+}
+.section-hot .w .section-hot-c ul li.section-hot-c-li1{
+    background-color: #f1eded;
+    border-top: 1px solid #e53935;
+}
+.section-hot .w .section-hot-c ul li.section-hot-c-li1 p{
+    text-align: center;
+}
+.section-hot .w .section-hot-c ul li.section-hot-c-li1 p.p1{
+    font-size: 20px;
+    margin: 60px auto 0;
+    color: #ef3a3b;
+}
+.section-hot .w .section-hot-c ul li.section-hot-c-li1 img{
+    display: block;
+    margin: 34px auto;
+}
+.section-hot .w .section-hot-c ul li.section-hot-c-li1 p.p2{
+    font-size: 15px;
+    color: #706f6f;
+}
+.section-hot .w .section-hot-c ul li.section-hot-c-li1 .time{
+    width: 168px;
+    height: 46px;
+    background-color: #605751;
+    margin: 32px auto 0;
+}
+.section-hot .w .section-hot-c ul li.section-hot-c-li2{
+    border-top: 1px solid #ffac13;
+}
+.section-hot .w .section-hot-c ul li.section-hot-c-li2 a{
+    text-align: center;
+}
+.section-hot .w .section-hot-c ul li.section-hot-c-li2 a img{
+    display: block;
+    margin: 48px auto 42px;
+}
+.section-hot .w .section-hot-c ul li.section-hot-c-li2 a p{
+
+}
+.section-hot .w .section-hot-c ul li.section-hot-c-li2 a p.p1{
+    height: 24px;
+    line-height: 14px;
+    font-size: 14px;
+    color: #202020;
+}
+.section-hot .w .section-hot-c ul li.section-hot-c-li2 a p.p2{
+    font-size: 9px;
+    color: #adadad;
+    height: 31px;
+    line-height: 15px;
+}
+.section-hot .w .section-hot-c ul li.section-hot-c-li2 a p.p3{
+    font-size: 14px;
+    color: #fa6509;
+}
+.section-hot .w .section-hot-c ul li.section-hot-c-li2 a p.p3 s{
+    color: #adadad;
+}
+
+
+.section-hot .w .section-hot-c ul li.section-hot-c-li3{
+    border-top: 1px solid #83c44e;
+}
+.section-hot .w .section-hot-c ul li.section-hot-c-li4{
+    border-top: 1px solid #2196f3;
+}
+.section-hot .w .section-hot-c ul li.section-hot-c-li5{
+    border-top: 1px solid #e53935;
+}
+
+.section-hot .w .banner-b{
+    background: url("../images/section-hot-b01.jpg") no-repeat center;
+    background-size: contain;
+}
+/*section-hot-end*/
+/*section-end*/
+
+/*banner-start*/
+.banner{
+    height: 6774px;
+    background-color: #f5f5f5;
+    padding: 42px 0 60px 0;
+}
+/*shouji-t*/
+/*.banner .w .shouji .shouji-t{
+    height: 40px;
+}*/
+.banner .w .shouji .banner-t a span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #b0b0b0;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: -1px;
+    color: #ffffff;
+    margin-left: 8px;
+}
+.banner .w .shouji .banner-t a:hover{
+    color: #fa6509;
+}
+.banner .w .shouji .banner-t a:hover span{
+    background-color: #fa6509;
+}
+
+/*shouji-c*/
+/*shouji-banner-b*/
+.banner .w .shouji .banner-b{
+    background: url("../images/shouji-b-bgimg.jpg") no-repeat center;
+    background-size: contain;
+}
+/*jiadian*/
+/*jiadian-banner-t*/
+/*jiadian-banner-c-l*/
+/*jiadian-banner-c-r-li最后一个li====公共样式.jiadian-banner-c-r-ul-lastli*/
+/*jiadian-banner-b*/
+.banner .w .jiadian .banner-b{
+    background: url("../images/jiadian-banner-b.jpg") no-repeat center;
+    background-size: contain;
+}
+/*zhineng-banner-b*/
+.banner .w .zhineng .banner-b{
+    background: url("../images/zhineng-banner-b.jpg") no-repeat center;
+    background-size: contain;
+}
+/*dapei-banner-b*/
+.banner .w .dapei .banner-b{
+    background: url("../images/dapei-banner-b.jpg") no-repeat center;
+    background-size: contain;
+}
+/*peijian-banner-b*/
+.banner .w .peijian .banner-b{
+    background: url("../images/peijian-banner-b.jpg") no-repeat center;
+    background-size: contain;
+}
+/*weinituijian-banner-t*/
+.banner .w .weinituijian{
+    margin-bottom: 40px;
+}
+.banner .w .weinituijian .banner-t{
+    margin-top: 40px;
+}
+.banner .w .weinituijian .banner-t .section-hot-t-jian{
+    margin: -2px 0 10px;
+}
+/*weinituijian-banner-bot*/
+.banner .w .weinituijian .banner-bot{
+}
+.banner .w .weinituijian .banner-bot ul{
+
+}
+.banner .w .weinituijian .banner-bot ul li{
+    width: 234px;
+    height: 300px;
+    float: left;
+    background-color: #ffffff;
+    text-align: center;
+}
+.banner .w .weinituijian .banner-bot ul li+li{
+    margin-left: 14px;
+}
+.banner .w .weinituijian .banner-bot ul li dl dt{
+    width: 194px;
+    height: 145px;
+    padding: 40px 0 15px;
+    margin: 0 auto;
+}
+.banner .w .weinituijian .banner-bot ul li dl dd{
+    width: 194px;
+    height: 21px;
+    font-size: 14px;
+    margin: 0 auto 10px;
+}
+.banner .w .weinituijian .banner-bot ul li dl dd.name{
+    height: 18px;
+}
+.banner .w .weinituijian .banner-bot ul li dl dd.name a{
+    color: #333;
+}
+.banner .w .weinituijian .banner-bot ul li dl dd.price{
+    color: #ff6700;
+}
+.banner .w .weinituijian .banner-bot ul li dl dd.tips{
+    margin-bottom: 0;
+    color: #757575;
+}
+.banner .w .weinituijian .banner-bot ul li dl dt a img{
+    width: 140px;
+}
+/*repingchanpin-bot*/
+.banner .w .repingchanpin .hotping-bot{
+    margin-bottom: 40px;
+}
+.banner .w .repingchanpin .hotping-bot ul li{
+    width: 296px;
+    height: 385px;
+    padding-bottom: 30px;
+    float: left;
+    background-color: #fff;
+}
+.banner .w .repingchanpin .hotping-bot ul li+li{
+    margin-left: 14px;
+}
+.banner .w .repingchanpin .hotping-bot ul li>a{
+    display: block;
+    margin-bottom: 28px;
+}
+.banner .w .repingchanpin .hotping-bot ul li>a img{
+    width: 296px;
+}
+.banner .w .repingchanpin .hotping-bot ul li p{
+    width: 238px;
+    margin: 0 auto;
+}
+.banner .w .repingchanpin .hotping-bot ul li p.pinglun{
+    height: 92px;
+    font-size: 14px;
+    color: #333333;
+    line-height: 24px;
+}
+.banner .w .repingchanpin .hotping-bot ul li p.from{
+    height: 28px;
+    font-size: 12px;
+    color: #b0b0b0;
+}
+.banner .w .repingchanpin .hotping-bot ul li p.proc{
+    height: 15px;
+    font-size: 14px;
+}
+.banner .w .repingchanpin .hotping-bot ul li p.proc>a{
+    color: #333333;
+    padding-right: 11px;
+    border-right: 1px solid #e0e0e0;
+}
+.banner .w .repingchanpin .hotping-bot ul li p.proc .price{
+    color: #ff6700;
+    margin-left: 11px;
+}
+
+/*neirong-start*/
+/*neirong-banner-bot*/
+.banner .w .neirong .neirong-banner-bot{
+
+}
+.banner .w .neirong .neirong-banner-bot ul>li{
+    float: left;
+    width: 296px;
+    height: 344px;
+    padding: 50px 0 25px;
+    text-align: center;
+    background-color: #fff;
+    border-top: 1px solid #ffac13;
+}
+.banner .w .neirong .neirong-banner-bot ul>li+li{
+    margin-left: 14px;
+}
+.banner .w .neirong .neirong-banner-bot ul>li h6{
+    height: 16px;
+    font-size: 16px;
+    color: #ffac13;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+.banner .w .neirong .neirong-banner-bot ul>li a{
+    display: block;
+    margin: 0 auto;
+}
+.banner .w .neirong .neirong-banner-bot ul>li a.hlbot{
+    width: 256px;
+    height: 20px;
+    font-size: 20px;
+    color: #333333;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.banner .w .neirong .neirong-banner-bot ul>li a.desc{
+    width: 192px;
+    height: 24px;
+    font-size: 12px;
+    color: #b0b0b0;
+    margin-bottom: 26px;
+}
+.banner .w .neirong .neirong-banner-bot ul>li a.price{
+    height: 16px;
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 16px;
+}
+.banner .w .neirong .neirong-banner-bot ul>li a.n-image img{
+    width: 216px;
+}
+.banner .w .neirong .neirong-banner-bot ul>li ol{
+    width: 112px;
+    margin: 28px auto 0;
+}
+.banner .w .neirong .neirong-banner-bot ul>li:first-child ol{
+    width: 78px;
+}
+.banner .w .neirong .neirong-banner-bot ul>li ol>li{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #b0b0b0;
+    float: left;
+    border: 2px solid #ffffff;
+    vertical-align: middle;
+}
+.banner .w .neirong .neirong-banner-bot ul>li ol>li+li{
+    margin-left: 24px;
+}
+.banner .w .neirong .neirong-banner-bot ul>li ol>li:hover{
+    background-color: #ff6700;
+}
+.banner .w .neirong .neirong-banner-bot ul>li ol>li.active{
+    background-color: #ffffff;
+    border: 2px solid #ff6700;
+}
+
+
+
+
+
+/*banner-end*/
+
+/*art-start*/
+.art{
+    height: 272px;
+}
+/*art-end*/
+
+/*footer-start*/
+.footer{
+    height: 195px;
+    background-color: #f5f5f5;
+}
+/*footer-end*/
